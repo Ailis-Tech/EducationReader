@@ -99,36 +99,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="hiragana\く.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="hiragana\か.jpg" />
-    <Content Include="hiragana\こ.jpg" />
-    <Content Include="hiragana\た.jpg" />
-    <Content Include="hiragana\と.jpg" />
-    <Content Include="hiragana\ね.jpg" />
-    <Content Include="hiragana\は.jpg" />
-    <Content Include="hiragana\ひ.jpg" />
-    <Content Include="hiragana\へ.jpg" />
-    <Content Include="hiragana\ほ.jpg" />
-    <Content Include="hiragana\み.jpg" />
-    <Content Include="hiragana\れ.jpg" />
-    <Content Include="number\0.jpg" />
-    <Content Include="number\1.jpg" />
-    <Content Include="number\2.jpg" />
-    <Content Include="number\3.jpg" />
-    <Content Include="number\4.jpg" />
-    <Content Include="number\5.jpg" />
-    <Content Include="number\6.jpg" />
-    <Content Include="number\7.jpg" />
-    <Content Include="number\8.jpg" />
-    <Content Include="number\9.jpg" />
-    <None Include="hiragana\い.jpg" />
-    <None Include="hiragana\あ.jpg" />
-    <Content Include="hiragana\き.jpg" />
-    <Content Include="hiragana\し.jpg" />
-  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
