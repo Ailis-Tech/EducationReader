@@ -4,4 +4,5 @@ bin/Release/
 ReadContents/hiranaga/
 ReadContents/number/
 .vs/
-ReadContents/obj/
+ReadContents/obj/Debug/
+ReadContents/obj/Release/
