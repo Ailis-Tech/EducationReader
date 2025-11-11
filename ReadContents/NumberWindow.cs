@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Resources;
-using System.Reflection;
+﻿using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -19,7 +16,7 @@ namespace ReadContents
             this.MaximizeBox = false;
         }
 
-        CommonConst CONST_NUM = new CommonConst();
+        private readonly CommonConst CONST_NUM = new CommonConst();
         private Button[] buttons;
         private PictureBox[] pictureBoxes;
         private System.Media.SoundPlayer player = null;
@@ -43,12 +40,13 @@ namespace ReadContents
 
             for (int i = 0; i < buttons.Length; i++)
             {
-                this.buttons[i] = new Button();
-
-                this.buttons[i].Name = "bt" + i.ToString();
-                this.buttons[i].Text = i.ToString();
-                this.buttons[i].Height = CONST_NUM.BTN_HEIGHT;
-                this.buttons[i].Width = CONST_NUM.BTN_WIDTH;
+                this.buttons[i] = new Button
+                {
+                    Name = "bt" + i.ToString(),
+                    Text = i.ToString(),
+                    Height = CONST_NUM.BTN_HEIGHT,
+                    Width = CONST_NUM.BTN_WIDTH
+                };
                 this.buttons[i].Font = new Font(this.buttons[i].Font.OriginalFontName, CONST_NUM.TXT_SIZE);
 
                 //0～9ボタンの配置
@@ -80,13 +78,15 @@ namespace ReadContents
 
             for (int i = 0; i < pictureBoxes.Length; i++)
             {
-                this.pictureBoxes[i] = new PictureBox();
-                this.pictureBoxes[i].Name = "pict" + (i + 1).ToString();
-                this.pictureBoxes[i].SizeMode = PictureBoxSizeMode.StretchImage;
-                this.pictureBoxes[i].Height = CONST_NUM.PICT_HEIGHT;
-                this.pictureBoxes[i].Width = CONST_NUM.PICT_WIDTH;
-                this.pictureBoxes[i].Top = boxLocationY + (i / 5) * CONST_NUM.PICT_HEIGHT;
-                this.pictureBoxes[i].Left = boxLocationX + (i % 5) * CONST_NUM.PICT_WIDTH;
+                this.pictureBoxes[i] = new PictureBox
+                {
+                    Name = "pict" + (i + 1).ToString(),
+                    SizeMode = PictureBoxSizeMode.StretchImage,
+                    Height = CONST_NUM.PICT_HEIGHT,
+                    Width = CONST_NUM.PICT_WIDTH,
+                    Top = boxLocationY + (i / 5) * CONST_NUM.PICT_HEIGHT,
+                    Left = boxLocationX + (i % 5) * CONST_NUM.PICT_WIDTH
+                };
                 this.Controls.Add(this.pictureBoxes[i]);
             }
         }
@@ -111,10 +111,7 @@ namespace ReadContents
             string voiceMediaPath = Path.Combine(mediaDirectory, voiceFileName);
 
             player = new System.Media.SoundPlayer(voiceMediaPath);
-            if (player != null)
-            {
-                player.Play();
-            }
+            player?.Play();
         }
 
         private void setImage(string imagePath, int idx)
@@ -128,19 +125,23 @@ namespace ReadContents
                     {
                         //Image.FromFileメソッドを使用
                         string pictboxName = "pict" + (i + 1).ToString();
-                        foreach (Control control in this.Controls)
+                        foreach (Control cont in this.Controls)
                         {
-                            if (control is PictureBox && control.Name == pictboxName)
+                            if (cont is PictureBox tmpbox && cont.Name == pictboxName)
                             {
-                                PictureBox pictureBox = (PictureBox)control;
+                                PictureBox pictBox = tmpbox;
 
                                 if (idx > 0 && i < idx)
                                 {
-                                    pictureBox.Image = Image.FromFile(imagePath);
+                                    pictBox.Image = Image.FromFile(imagePath);
                                 }
                                 else
                                 {
-                                    pictureBox.Image = null;
+                                    if (pictBox.Image != null)
+                                    {
+                                        pictBox.Image.Dispose();
+                                        pictBox.Image = null;
+                                    }
                                 }
 
                                 break;
