@@ -1,8 +1,8 @@
 *.exe
 bin/Debug/
 bin/Release/
-ReadContents/hiranaga/
-ReadContents/number/
-.vs/
-ReadContents/obj/Debug/
-ReadContents/obj/Release/
+hiranaga/
+number/
+.vs/*
+obj/Debug/*
+obj/Release/*
