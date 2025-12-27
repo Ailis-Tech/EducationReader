@@ -1,9 +1,7 @@
-﻿using System;
-using System.IO;
-using System.Resources;
-using System.Reflection;
+﻿using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
+using System;
 
 namespace ReadContents
 {
@@ -26,7 +24,7 @@ namespace ReadContents
 
         private void initializeWindow()
         {
-            //サイズや配置の初期設定
+            // サイズや配置の初期設定
             int vIndex = CONST_NUM.BTN_HEIGHT + CONST_NUM.BTN_SPACE;
             int hIndex = CONST_NUM.BTN_WIDTH + CONST_NUM.BTN_SPACE;
             this.Height = vIndex * 3 + CONST_NUM.PICT_HEIGHT * 2 + CONST_NUM.BTN_SPACE * 8;
@@ -38,7 +36,7 @@ namespace ReadContents
             int vIndex = CONST_NUM.BTN_HEIGHT + CONST_NUM.BTN_SPACE;
             int hIndex = CONST_NUM.BTN_WIDTH + CONST_NUM.BTN_SPACE;
 
-            //0～9までの10数の初期化
+            // 0～9までの10数の初期化
             this.buttons = new Button[10];
 
             for (int i = 0; i < buttons.Length; i++)
@@ -51,16 +49,16 @@ namespace ReadContents
                 this.buttons[i].Width = CONST_NUM.BTN_WIDTH;
                 this.buttons[i].Font = new Font(this.buttons[i].Font.OriginalFontName, CONST_NUM.TXT_SIZE);
 
-                //0～9ボタンの配置
+                // 0～9ボタンの配置
                 if (i == 0)
                 {
-                    //0は左上に表示
+                    // 0は左上に表示
                     this.buttons[i].Top = CONST_NUM.BTN_SPACE;
                     this.buttons[i].Left = CONST_NUM.BTN_SPACE;
                 }
                 else
                 {
-                    //1～9は3×3の9マス表示
+                    // 1～9は3×3の9マス表示
                     this.buttons[i].Top = CONST_NUM.BTN_SPACE + (((i - 1) / 3) * vIndex);
                     this.buttons[i].Left = CONST_NUM.BTN_SPACE + hIndex + (((i - 1) % 3) * hIndex);
                 }
@@ -75,7 +73,7 @@ namespace ReadContents
             int boxLocationX = CONST_NUM.BTN_SPACE * 4;
             int boxLocationY = CONST_NUM.BTN_SPACE + (CONST_NUM.BTN_HEIGHT+ CONST_NUM.BTN_SPACE) * 3;
 
-            //1～9個の画像格納領域の初期化
+            // 1～9個の画像格納領域の初期化
             this.pictureBoxes = new PictureBox[9];
 
             for (int i = 0; i < pictureBoxes.Length; i++)
@@ -93,46 +91,41 @@ namespace ReadContents
 
         private void btnClick(object sender, System.EventArgs e)
         {
-            //引数のボタンオブジェクトをセット
+            // 引数のボタンオブジェクトをセット
             Button btn = (Button)sender;
 
-            //メディアフォルダを取得
-            string currentDirectory = Directory.GetCurrentDirectory();
-            string parentDirectory = Path.GetDirectoryName(currentDirectory);
-            parentDirectory = Path.GetDirectoryName(parentDirectory);
-            string mediaDirectory = Path.Combine(parentDirectory, "number");
+            // 音声メディアのリソース名を取得
+            string voiceName = "v" + btn.Text;
 
-            //画像メディアを取得
+            // 音声メディアを再生
+            Common.playVoice(voiceName);
+
+            // メディアフォルダを取得
+            string mediaDirectory = Common.getMediaDirectory("number");
+
+            Console.WriteLine(mediaDirectory);
+
+            // 画像メディアを取得
             string imageMediaPath = Path.Combine(mediaDirectory, "image.jpg");
             setImage(imageMediaPath, int.Parse(btn.Text));
-
-            //音声メディアのパスを取得
-            string voiceFileName = btn.Text + ".wav";
-            string voiceMediaPath = Path.Combine(mediaDirectory, voiceFileName);
-
-            player = new System.Media.SoundPlayer(voiceMediaPath);
-            if (player != null)
-            {
-                player.Play();
-            }
         }
 
         private void setImage(string imagePath, int idx)
         {
-            //画像を読み込んでpictureBoxに表示
+            // 画像を読み込んでpictureBoxに表示
             try
             {
                 if (System.IO.File.Exists(imagePath))
                 {
                     for (int i = 0; i < 9; i++)
                     {
-                        //Image.FromFileメソッドを使用
+                        // Image.FromFileメソッドを使用
                         string pictboxName = "pict" + (i + 1).ToString();
                         foreach (Control control in this.Controls)
                         {
-                            if (control is PictureBox && control.Name == pictboxName)
+                            if (control is PictureBox box && control.Name == pictboxName)
                             {
-                                PictureBox pictureBox = (PictureBox)control;
+                                PictureBox pictureBox = box;
 
                                 if (idx > 0 && i < idx)
                                 {

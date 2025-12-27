@@ -4,3 +4,46 @@
 
 /.vs/ReadContents
 *.json
+
+# ビルド出力
+[Bb]in/
+[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
+
+# Visual Studio / ユーザー関連
+*.suo
+*.user
+*.userosscache
+*.userprefs
+*.VC.db
+*.VC.opendb
+
+# ビルド生成ファイル
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.cache
+*.log
+
+# NuGet
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+
+# テスト結果
+TestResults/
+*.trx
+
+# 発行 / 公開
+publish/
+*.publishsettings
+/ReadContents/obj/Debug/ReadContents.Properties.Resources.resources
+/ReadContents/obj/Debug/ReadContents.pdb
+/ReadContents/obj/Debug/ReadContents.exe
+/ReadContents/obj/Debug/ReadContents.csproj.GenerateResource.cache
+/ReadContents/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/ReadContents/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+/ReadContents/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll

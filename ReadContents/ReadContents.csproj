@@ -99,6 +99,63 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="voice\あ.wav" />
+    <Content Include="voice\い.wav" />
+    <Content Include="voice\う.wav" />
+    <Content Include="voice\え.wav" />
+    <Content Include="voice\お.wav" />
+    <Content Include="voice\か.wav" />
+    <Content Include="voice\き.wav" />
+    <Content Include="voice\く.wav" />
+    <Content Include="voice\け.wav" />
+    <Content Include="voice\こ.wav" />
+    <Content Include="voice\さ.wav" />
+    <Content Include="voice\し.wav" />
+    <Content Include="voice\す.wav" />
+    <Content Include="voice\せ.wav" />
+    <Content Include="voice\そ.wav" />
+    <Content Include="voice\た.wav" />
+    <Content Include="voice\ち.wav" />
+    <Content Include="voice\つ.wav" />
+    <Content Include="voice\て.wav" />
+    <Content Include="voice\と.wav" />
+    <Content Include="voice\な.wav" />
+    <Content Include="voice\に.wav" />
+    <Content Include="voice\ぬ.wav" />
+    <Content Include="voice\ね.wav" />
+    <Content Include="voice\の.wav" />
+    <Content Include="voice\は.wav" />
+    <Content Include="voice\ひ.wav" />
+    <Content Include="voice\ふ.wav" />
+    <Content Include="voice\へ.wav" />
+    <Content Include="voice\ほ.wav" />
+    <Content Include="voice\ま.wav" />
+    <Content Include="voice\み.wav" />
+    <Content Include="voice\む.wav" />
+    <Content Include="voice\め.wav" />
+    <Content Include="voice\も.wav" />
+    <Content Include="voice\や.wav" />
+    <Content Include="voice\ゆ.wav" />
+    <Content Include="voice\よ.wav" />
+    <Content Include="voice\ら.wav" />
+    <Content Include="voice\り.wav" />
+    <Content Include="voice\る.wav" />
+    <Content Include="voice\れ.wav" />
+    <Content Include="voice\ろ.wav" />
+    <Content Include="voice\わ.wav" />
+    <Content Include="voice\ん.wav" />
+    <Content Include="voice\0.wav" />
+    <Content Include="voice\1.wav" />
+    <Content Include="voice\2.wav" />
+    <Content Include="voice\3.wav" />
+    <Content Include="voice\4.wav" />
+    <Content Include="voice\5.wav" />
+    <Content Include="voice\6.wav" />
+    <Content Include="voice\7.wav" />
+    <Content Include="voice\8.wav" />
+    <Content Include="voice\9.wav" />
+  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
