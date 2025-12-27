@@ -5,3 +5,4 @@
 /.vs/ReadContents
 *.json
 /ReadContents/obj/Debug/*
+/ReadContents/obj/Debug/ReadContents.csproj.GenerateResource.cache
