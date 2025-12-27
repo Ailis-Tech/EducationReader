@@ -126,9 +126,10 @@ namespace ReadContents
                         string pictboxName = "pict" + (i + 1).ToString();
                         foreach (Control cont in this.Controls)
                         {
-                            if (control is PictureBox box && control.Name == pictboxName)
+                            PictureBox control = null;
+                            if (control is PictureBox pictBox && control.Name == pictboxName)
                             {
-                                PictureBox pictureBox = box;
+                                PictureBox pictureBox = pictBox;
 
                                 if (idx > 0 && i < idx)
                                 {
