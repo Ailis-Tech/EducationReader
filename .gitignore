@@ -6,3 +6,4 @@
 *.json
 /ReadContents/obj/Debug/*
 /ReadContents/obj/Debug/ReadContents.csproj.GenerateResource.cache
+/ReadContents/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
