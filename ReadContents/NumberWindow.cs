@@ -106,8 +106,6 @@ namespace ReadContents
             // メディアフォルダを取得
             string mediaDirectory = Common.getMediaDirectory("number");
 
-            Console.WriteLine(mediaDirectory);
-
             // 画像メディアを取得
             string imageMediaPath = Path.Combine(mediaDirectory, "image.jpg");
             setImage(imageMediaPath, int.Parse(btn.Text));
@@ -126,8 +124,7 @@ namespace ReadContents
                         string pictboxName = "pict" + (i + 1).ToString();
                         foreach (Control cont in this.Controls)
                         {
-                            PictureBox control = null;
-                            if (control is PictureBox pictBox && control.Name == pictboxName)
+                            if (cont is PictureBox pictBox && cont.Name == pictboxName)
                             {
                                 PictureBox pictureBox = pictBox;
 
@@ -147,7 +144,6 @@ namespace ReadContents
                                 break;
                             }
                         }
-
                     }
                 }
             }
