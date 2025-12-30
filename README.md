@@ -1,3 +1,6 @@
+![Static Badge](https://img.shields.io/badge/build-passing-green)
+![Static Badge](https://img.shields.io/badge/license-MIT-blue)
+
 **Over View**
 * 知育用(2～5歳くらい)のアプリとして試作したものです。
 * 現時点ではひらがなと数字のみ対応しています。
@@ -33,3 +36,7 @@
 **Credit**
 1. 音声データの生成には下記を使用させていただきました。(wav形式に変換)
    * 音読さん：https://ondoku3.com/ja/
+  
+**License**
+* 「ReadContents」は MIT License の下で公開されています。
+ [MIT license](https://choosealicense.com/licenses/mit/)
