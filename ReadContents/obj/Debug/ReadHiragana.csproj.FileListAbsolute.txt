@@ -1,9 +1,0 @@
-C:\Users\Masuta_Family\source\repos\ReadHiragana\ReadHiragana\bin\Debug\ReadHiragana.exe.config
-C:\Users\Masuta_Family\source\repos\ReadHiragana\ReadHiragana\bin\Debug\ReadHiragana.exe
-C:\Users\Masuta_Family\source\repos\ReadHiragana\ReadHiragana\bin\Debug\ReadHiragana.pdb
-C:\Users\Masuta_Family\source\repos\ReadHiragana\ReadHiragana\obj\Debug\ReadHiragana.csprojAssemblyReference.cache
-C:\Users\Masuta_Family\source\repos\ReadHiragana\ReadHiragana\obj\Debug\ReadHiragana.MainWindow.resources
-C:\Users\Masuta_Family\source\repos\ReadHiragana\ReadHiragana\obj\Debug\ReadHiragana.Properties.Resources.resources
-C:\Users\Masuta_Family\source\repos\ReadHiragana\ReadHiragana\obj\Debug\ReadHiragana.csproj.GenerateResource.cache
-C:\Users\Masuta_Family\source\repos\ReadHiragana\ReadHiragana\obj\Debug\ReadHiragana.exe
-C:\Users\Masuta_Family\source\repos\ReadHiragana\ReadHiragana\obj\Debug\ReadHiragana.pdb
