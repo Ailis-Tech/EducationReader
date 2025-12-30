@@ -1,5 +1,7 @@
-﻿using System;
-using System.IO;
+﻿// Copyright (c) 2025 Ailis-Tech
+// SPDX-License-Identifier: MIT
+
+using System;
 using System.Threading;
 using System.Windows.Forms;
 

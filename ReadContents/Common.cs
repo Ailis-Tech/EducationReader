@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Copyright (c) 2025 Ailis-Tech
+// SPDX-License-Identifier: MIT
+
+using System;
 using System.IO;
 
 public class CommonConst

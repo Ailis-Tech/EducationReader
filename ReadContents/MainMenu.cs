@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Copyright (c) 2025 Ailis-Tech
+// SPDX-License-Identifier: MIT
+
+using System;
 using System.Windows.Forms;
 
 namespace ReadContents
@@ -19,18 +15,17 @@ namespace ReadContents
         }
 
         //モーダルで表示
-        //※モードレスの場合はvarではなくクラス名で宣言し、.Show()で起動
         private void btHiragana_Click(object sender, EventArgs e)
         {
             var hiraganaWindow = new HiraganaWindow();
-            hiraganaWindow .ShowDialog();
+            hiraganaWindow.ShowDialog();
             hiraganaWindow.Dispose();
         }
 
         private void btNumber_Click(object sender, EventArgs e)
         {
             var numberWindow = new NumberWindow();
-            numberWindow .ShowDialog();
+            numberWindow.ShowDialog();
             numberWindow.Dispose();
         }
     }

@@ -1,7 +1,9 @@
-﻿using System.IO;
+﻿// Copyright (c) 2025 Ailis-Tech
+// SPDX-License-Identifier: MIT
+
+using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
-using System;
 
 namespace ReadContents
 {
