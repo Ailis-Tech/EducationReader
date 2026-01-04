@@ -9,7 +9,7 @@
 **How to build**
 1. Visual Studioでビルドするため、インストールします。
 2. EducationReader\hiraganaおよびnumberにそれぞれ表示したい画像(jpg)を置きます。
-   * hiraganaのファイル名は表示したいひらがなと同じにします。numberはimage.jpgとします。
+   * hiraganaのファイル名は表示したいひらがなと一致させてください。numberはimage.jpgとします。
 4. slnファイルからプロジェクトを開いてビルドしてください。
 5. ビルドが成功するとEducationReader\bin内に実行ファイル(.exe)が生成されます。
 
