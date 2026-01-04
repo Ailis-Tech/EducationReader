@@ -8,10 +8,10 @@
 
 **How to build**
 1. Visual Studioでビルドするため、インストールします。
-2. ReadContents\hiraganaおよびnumberにそれぞれ表示したい画像(jpg)を置きます。
+2. EducationReader\hiraganaおよびnumberにそれぞれ表示したい画像(jpg)を置きます。
    * hiraganaのファイル名は表示したいひらがなと同じにします。numberはimage.jpgとします。
 4. slnファイルからプロジェクトを開いてビルドしてください。
-5. ビルドが成功するとReadContents\bin内に実行ファイル(.exe)が生成されます。
+5. ビルドが成功するとEducationReader\bin内に実行ファイル(.exe)が生成されます。
 
 **How to Use**
 * 任意のフォルダを作り、その中に下記のようなフォルダ階層になるようにファイルを置いてください。
@@ -38,5 +38,5 @@
    * 音読さん：https://ondoku3.com/ja/
   
 **License**
-* 「ReadContents」は MIT License の下で公開されています。
+* 「EducationReader」は MIT License の下で公開されています。
  [MIT license](https://choosealicense.com/licenses/mit/)
