@@ -2,7 +2,7 @@
 # この .gitignore ファイルは Microsoft(R) Visual Studio によって自動的に作成されました。
 ################################################################################
 
-/.vs/ReadContents
+/.vs/EducationReader
 *.json
 
 # ビルド出力
@@ -44,10 +44,11 @@ TestResults/
 # 発行 / 公開
 publish/
 *.publishsettings
-/ReadContents/obj/Debug/ReadContents.Properties.Resources.resources
-/ReadContents/obj/Debug/ReadContents.pdb
-/ReadContents/obj/Debug/ReadContents.exe
-/ReadContents/obj/Debug/ReadContents.csproj.GenerateResource.cache
-/ReadContents/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
-/ReadContents/obj/Debug/DesignTimeResolveAssemblyReferences.cache
-/ReadContents/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll
+/EducationReader/obj/Debug/EducationReader.Properties.Resources.resources
+/EducationReader/obj/Debug/EducationReader.pdb
+/EducationReader/obj/Debug/EducationReader.exe
+/EducationReader/obj/Debug/EducationReader.csproj.GenerateResource.cache
+/EducationReader/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/EducationReader/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+/EducationReader/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll
+/.vs
