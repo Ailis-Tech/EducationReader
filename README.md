@@ -35,7 +35,7 @@
 
 **Credit**
 1. 音声データの生成には下記を使用させていただきました。(wav形式に変換)
-   * 音読さん：https://ondoku3.com/ja/
+   * ©[音読さん](https://ondoku3.com/ja/)
   
 **License**
 * 「EducationReader」は MIT License の下で公開されています。
